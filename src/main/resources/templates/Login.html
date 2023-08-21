@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Log</title>
+
+    <link rel="stylesheet" href="/static/css/login.css" th:href="@{/css/login.css}"/>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+Login here:
+
+<form th:action="@{authenticate.java}">
+id : <input type="number" required><br>
+pass:<input type="password" required><br>
+
+<input type="submit" value="Log in">
+
+</form>
+</body>
+</html>

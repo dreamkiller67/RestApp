@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+USer
+
+<form  action="#" th:action="@{/User}" th:object="${User}" method="post">
+    id : <input type="number" required><br>
+    pass:<input type="password" required><br>
+
+    <input type="submit" value="save">
+
+</form>
+</body>
+</html>
