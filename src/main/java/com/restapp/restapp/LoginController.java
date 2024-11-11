@@ -22,7 +22,7 @@ public class LoginController {
  LoginController(UserRepo userRepo){
      this.userRepo = userRepo;
  }
-    /*
+    
     @RequestMapping(path="/auth")
   public ModelAndView loginModel(){
 
@@ -30,23 +30,24 @@ public class LoginController {
         modelAndView.setViewName("Login.html");
         return modelAndView;
     }
-     */
+    
 
+    /*
     @RequestMapping(path = "/auth")
     public String log(){
         return "Login.html";
     }
+*/
 
-
- /*   @PostMapping(path = "/User.html")
+   @PostMapping(path = "/User.html")
     public  ResponseEntity<User>saveUser(@RequestBody User user){
         userRepo.save(user);
         return ResponseEntity.ok().build();
     }
 
 
-  */
-/*
+  
+
  @PostMapping(path = "/user")
  public String saveUser(@RequestBody User user){
 
@@ -54,8 +55,6 @@ public class LoginController {
      return "User.html";
  }
 
-
- */
  /*
     //REST approach
   public ResponseEntity<User> save(@RequestBody User user){
@@ -65,7 +64,7 @@ public class LoginController {
   }
 
   */
-    @RequestMapping(path = "/view")
+    @GetMapping(path = "/view")
    public List<User> find(){
         return userRepo.findAll();
   }
