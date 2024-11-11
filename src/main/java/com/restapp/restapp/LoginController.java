@@ -47,15 +47,6 @@ public class LoginController {
     }
 
 
-  
-
- @PostMapping(path = "/user")
- public String saveUser(@RequestBody User user){
-
-     userRepo.save(user);
-     return "User.html";
- }
-
  /*
     //REST approach
   public ResponseEntity<User> save(@RequestBody User user){
