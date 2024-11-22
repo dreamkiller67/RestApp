@@ -28,3 +28,8 @@ steps:
 - script: docker run -d -p 8181:8181 --name c1 dasnarayanb2/restapp
   displayName: 'deploy as container ' 
 
+- script: docker ps -a 
+  displayName : 'Get the contatiner status'
+
+- script: curl 127.0.0.1:8181/auth
+  displayName : 'check for health'
