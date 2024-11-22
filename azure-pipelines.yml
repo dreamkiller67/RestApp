@@ -25,3 +25,6 @@ steps:
     sudo apt-get install -y docker-ce 
   displayName: 'Install Docker'
 
+- script: docker run -d -p 8181:8181 --name c1 dasnarayanb2/restapp
+  displayName: 'deploy as container ' 
+
