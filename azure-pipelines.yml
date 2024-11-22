@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: sh 'git clone https://github.com/dreamkiller67/RestApp.git'
+- script: git clone https://github.com/dreamkiller67/RestApp.git
   displayName: 'Clone the repo'
 
 - script: |
