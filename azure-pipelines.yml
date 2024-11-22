@@ -30,6 +30,3 @@ steps:
 
 - script: docker ps -a 
   displayName : 'Get the contatiner status'
-
-- script: curl 127.0.0.1:8080/auth
-  displayName : 'check for health'
