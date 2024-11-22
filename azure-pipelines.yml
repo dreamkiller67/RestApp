@@ -25,11 +25,11 @@ steps:
     sudo apt-get install -y docker-ce 
   displayName: 'Install Docker'
 
-- script: docker run -d -p 8181:8181 --name c1 dasnarayanb2/myapp
+- script: docker run -d -p 8080:8181 --name c1 dasnarayanb2/myapp
   displayName: 'deploy as container ' 
 
 - script: docker ps -a 
   displayName : 'Get the contatiner status'
 
-- script: curl 172.17.0.2:8080/auth
+- script: curl 127.0.0.1:8080/auth
   displayName : 'check for health'
