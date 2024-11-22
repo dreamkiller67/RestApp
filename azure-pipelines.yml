@@ -31,5 +31,5 @@ steps:
 - script: docker ps -a 
   displayName : 'Get the contatiner status'
 
-- script: curl 172.17.0.2:8181/auth
+- script: curl 172.17.0.2:8080/auth
   displayName : 'check for health'
