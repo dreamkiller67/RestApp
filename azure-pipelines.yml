@@ -30,3 +30,6 @@ steps:
 
 - script: docker ps -a 
   displayName : 'Get the contatiner status'
+  
+- script: docker inspect c1
+  displayName: 'get the logs'
